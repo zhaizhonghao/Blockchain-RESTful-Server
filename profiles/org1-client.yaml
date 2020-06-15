@@ -1,0 +1,12 @@
+# Sample YAML for client config
+name: "Org1 Client"
+version: "1.0"
+client:
+  organization: Org1
+  credentialStore:
+    path: "./credstore/org1/hfc-kvs"
+    cryptoStore:
+      path: "./credstore/org1/hfc-cvs"
+  connection:
+    options:
+      grpc.keepalive_time_ms: 120000
